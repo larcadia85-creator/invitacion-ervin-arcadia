@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f0e5">
+  <title>Ervin & Arcadia | Boy or Girl?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <section class="cover" aria-label="Portada de la invitación">
+      <img class="cover-art" src="portada-osito.png" alt="Ilustración vintage de un osito con un globo aerostático y nubes">
+      <div class="cover-copy">
+        <p class="eyebrow">Una dulce sorpresa está por llegar</p>
+        <h1>Boy or Girl?</h1>
+        <p class="couple">Ervin <span>&</span> Arcadia</p>
+        <p class="date">30 de enero de 2027 · 4:00 p. m.</p>
+        <a class="open-button" href="#detalles">Abrir invitación</a>
+      </div>
+    </section>
+
+    <section class="details" id="detalles">
+      <p class="eyebrow">Con mucha ilusión queremos compartirlo contigo</p>
+      <h2>¡Acompáñanos!</h2>
+      <p class="intro">Estamos por descubrir una de las sorpresas más bonitas de nuestras vidas. Ven a celebrar este momento especial con nosotros.</p>
+
+      <div class="info-card">
+        <p class="info-label">Fecha</p>
+        <p class="info-value">Sábado, 30 de enero de 2027</p>
+        <p class="info-label">Hora</p>
+        <p class="info-value">4:00 p. m.</p>
+        <p class="info-label">Ubicación</p>
+        <a class="map-button" href="https://maps.app.goo.gl/RjopaoTzPoHtabH79" target="_blank" rel="noopener">
+          Ver ubicación en Google Maps
+        </a>
+      </div>
+
+      <div class="countdown-card">
+        <p class="eyebrow">La cuenta regresiva ha comenzado</p>
+        <div class="countdown" aria-live="polite">
+          <div><strong id="days">--</strong><span>Días</span></div>
+          <div><strong id="hours">--</strong><span>Horas</span></div>
+          <div><strong id="minutes">--</strong><span>Minutos</span></div>
+          <div><strong id="seconds">--</strong><span>Segundos</span></div>
+        </div>
+      </div>
+
+      <div class="gift-note">
+        
+        <p>Tu presencia es nuestro mejor regalo. Si además deseas obsequiarnos algo, tendremos lluvia de sobres con mucho cariño.</p>
+      </div>
+
+      <a class="whatsapp-button" id="whatsapp-link" href="#" target="_blank" rel="noopener">
+        Confirmar asistencia por WhatsApp
+      </a>
+      <p class="closing">Con cariño, Ervin & Arcadia</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

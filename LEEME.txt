@@ -1,0 +1,21 @@
+INVITACIÓN DIGITAL — ERVIN & ARCADIA
+
+Archivos:
+- index.html: estructura de la invitación.
+- styles.css: diseño adaptable a celulares y computadoras.
+- script.js: cuenta regresiva y enlace de WhatsApp.
+- portada-osito.png: ilustración de portada que compartiste.
+
+PARA ABRIR EN VISUAL STUDIO CODE
+1. Descomprime esta carpeta.
+2. Abre Visual Studio Code.
+3. Selecciona Archivo > Abrir carpeta y elige invitacion_ervin_arcadia.
+4. Abre index.html.
+5. Si tienes la extensión Live Server, haz clic derecho en index.html y selecciona "Open with Live Server".
+   También puedes abrir index.html directamente en tu navegador.
+
+PENDIENTE:
+- Reemplazar "Ubicación por confirmar" por la dirección real.
+- Agregar el enlace de Google Maps cuando compartas la ubicación.
+
+La imagen de portada usa object-fit: contain y height: auto para mostrarse completa, sin recortes.
