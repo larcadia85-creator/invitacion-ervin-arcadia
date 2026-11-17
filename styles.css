@@ -237,3 +237,52 @@ h1 {
     margin-top: 8px;
   }
 }
+
+
+/* Ajuste compacto adicional para pantallas de iPhone y Android. */
+@media (max-width: 480px) {
+  .cover {
+    width: min(100%, 360px);
+    padding: 9px;
+  }
+
+  .cover-art {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+
+  .cover-copy {
+    margin: 12px auto 8px;
+    padding: 0 8px 24px;
+  }
+
+  .cover-copy .eyebrow {
+    font-size: .76rem;
+    letter-spacing: .08em;
+    line-height: 1.5;
+  }
+
+  .cover-copy h1 {
+    font-size: clamp(2rem, 8vw, 2.8rem);
+    margin-top: 8px;
+  }
+
+  .cover-copy .couple {
+    font-size: clamp(2.1rem, 8.5vw, 2.9rem);
+    line-height: 1.25;
+    margin: 8px 0;
+  }
+
+  .cover-copy .date {
+    font-size: 1rem;
+    line-height: 1.45;
+    margin: 10px 0 18px;
+  }
+
+  .open-button {
+    margin: 4px 0 8px;
+  }
+}
