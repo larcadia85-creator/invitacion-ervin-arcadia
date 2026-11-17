@@ -28,3 +28,24 @@ setInterval(updateCountdown, 1000);
 const phone = "50557531378";
 const message = encodeURIComponent("¡Hola! Confirmo mi asistencia a la revelación de sexo de Ervin & Arcadia.");
 document.getElementById("whatsapp-link").href = `https://wa.me/${phone}?text=${message}`;
+
+
+// Apertura con transición suave de la portada hacia los detalles
+const openInvitationButton = document.getElementById("open-invitation");
+const detailsSection = document.getElementById("detalles");
+
+if (openInvitationButton && detailsSection) {
+  openInvitationButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    document.body.classList.add("invitation-open");
+
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    window.setTimeout(() => {
+      detailsSection.scrollIntoView({
+        behavior: reduceMotion ? "auto" : "smooth",
+        block: "start"
+      });
+      history.replaceState(null, "", "#detalles");
+    }, reduceMotion ? 0 : 260);
+  });
+}
