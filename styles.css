@@ -286,3 +286,48 @@ h1 {
     margin: 4px 0 8px;
   }
 }
+
+
+/* Último ajuste: tarjeta y dibujo más estrechos para que el contenido inferior respire. */
+@media screen and (max-width: 480px) {
+  .cover {
+    width: min(calc(100% - 24px), 310px) !important;
+    padding: 9px !important;
+    margin: 14px auto !important;
+  }
+
+  .cover-art {
+    width: 100% !important;
+    max-width: 250px !important;
+    height: auto !important;
+    object-fit: contain !important;
+  }
+
+  .cover-copy {
+    margin: 12px auto 8px !important;
+    padding: 0 8px 26px !important;
+  }
+
+  .cover-copy .eyebrow {
+    font-size: .68rem !important;
+    letter-spacing: .07em !important;
+    line-height: 1.5 !important;
+  }
+
+  .cover-copy h1 {
+    font-size: 2.15rem !important;
+    line-height: 1.1 !important;
+  }
+
+  .cover-copy .couple {
+    font-size: 2.25rem !important;
+    line-height: 1.25 !important;
+    margin: 7px 0 !important;
+  }
+
+  .cover-copy .date {
+    font-size: .92rem !important;
+    line-height: 1.45 !important;
+    margin: 9px 0 16px !important;
+  }
+}
